@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .shop-container {
+      width: 80%;
+      max-width: 1200px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .shop-name {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .product-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-image img {
+      width: 100%;
+      height: auto;
+    }
+    .product-info {
+      padding: 16px;
+      text-align: center;
+    }
+    .product-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #555;
+    }
+    .product-description {
+      font-size: 1rem;
+      color: #777;
+      margin-top: 8px;
+    }
+    .product-price {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 12px;
+    }
+    .buy-btn {
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    .buy-btn:hover {
+      background-color: #ff3300;
+    }
+  </style>
+</head>
+<body>
+  <div class="shop-container">
+    <header>
+      <div class="shop-name">My Shop</div>
+    </header>
+    <div class="products">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Stylish Headphones</h2>
+          <p class="product-description">Enjoy high-quality sound with these sleek and comfortable headphones.</p>
+          <p class="product-price">$120</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Wireless Mouse</h2>
+          <p class="product-description">Ergonomic design with smooth navigation for a seamless experience.</p>
+          <p class="product-price">$35</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Smartwatch</h2>
+          <p class="product-description">Track your fitness and stay connected with this sleek smartwatch.</p>
+          <p class="product-price">$200</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Portable Speaker</h2>
+          <p class="product-description">Enjoy powerful sound with this compact and portable speaker.</p>
+          <p class="product-price">$80</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Gaming Keyboard</h2>
+          <p class="product-description">RGB backlighting with fast response keys for gaming enthusiasts.</p>
+          <p class="product-price">$90</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Laptop Stand</h2>
+          <p class="product-description">Adjustable and ergonomic stand to enhance your workspace.</p>
+          <p class="product-price">$50</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Wireless Earbuds</h2>
+          <p class="product-description">Crystal-clear sound with long battery life and a secure fit.</p>
+          <p class="product-price">$75</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Tablet</h2>
+          <p class="product-description">High-resolution display and fast performance for on-the-go work.</p>
+          <p class="product-price">$350</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Smartphone</h2>
+          <p class="product-description">Stay connected with a sleek design and advanced features.</p>
+          <p class="product-price">$700</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Fitness Tracker</h2>
+          <p class="product-description">Monitor your fitness goals and track daily activities.</p>
+          <p class="product-price">$60</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Gaming Chair</h2>
+          <p class="product-description">Comfortable and ergonomic design for long gaming sessions.</p>
+          <p class="product-price">$220</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Power Bank</h2>
+          <p class="product-description">Charge your devices on the go with high-capacity power banks.</p>
+          <p class="product-price">$40</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Camera</h2>
+          <p class="product-description">Capture stunning photos and videos with this high-quality camera.</p>
+          <p class="product-price">$900</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Bluetooth Speaker</h2>
+          <p class="product-description">Portable speaker with excellent sound quality and bass.</p>
+          <p class="product-price">$100</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Monitor</h2>
+          <p class="product-description">High-definition display for clear and crisp visuals.</p>
+          <p class="product-price">$300</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Flash Drive</h2>
+          <p class="product-description">Portable storage solution for your essential files.</p>
+          <p class="product-price">$20</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Webcam</h2>
+          <p class="product-description">Full HD webcam for high-quality video calls.</p>
+          <p class="product-price">$75</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Gaming Headset</h2>
+          <p class="product-description">Immersive sound experience with comfortable ear cushions.</p>
+          <p class="product-price">$130</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">External Hard Drive</h2>
+          <p class="product-description">Large storage capacity for backing up your important files.</p>
+          <p class="product-price">$150</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">LED Desk Lamp</h2>
+          <p class="product-description">Bright and adjustable lighting for your workspace.</p>
+          <p class="product-price">$45</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://via.placeholder.com/300x200" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">Smart Home Assistant</h2>
+          <p class="product-description">Voice-activated assistant to control your smart home devices.</p>
+          <p class="product-price">$250</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

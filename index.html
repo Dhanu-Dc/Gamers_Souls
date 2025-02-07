@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esports Gaming Community</title>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import { firebaseConfig } from "./firebaseConfig.js"; // Import configuration
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBbUlponXpYQXigTszOERmgRCIcwcLoRDE",
+      authDomain: "gamers-souls.firebaseapp.com",
+      projectId: "gamers-souls",
+      storageBucket: "gamers-souls.firebasestorage.app",
+      messagingSenderId: "339442699256",
+      appId: "1:339442699256:web:894205014c4af8b5d4e40d"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <style>
+    .header-top {
+      background-color: #343a40;
+    }
+    .header-top img {
+      height: 60px;
+    }
+    .hero-section {
+      background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+    }
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .match-card,
+    .tournament-card {
+      transition: transform 0.3s;
+    }
+    .match-card:hover,
+    .tournament-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Esports Community</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recent-matches">Recent Matches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#upcoming-tournaments">Upcoming Tournaments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collab.html">Collaboration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cont.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.JS">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header-top py-3">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="gaminglogo.png" alt="Logo" class="me-3" style="height: 150px;" />
+        <h1 class="h4 mb-0 text-white">Welcome to GAMERS SOULS COMMUNITY</h1>
+      </div>
+      <div>
+        <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+        <a href="#sponsorship" class="btn btn-warning btn-lg fw-bold rounded-pill shadow-sm">Become a Sponsor</a>
+      </div>
+    </div>
+  </header>
+  
+
+      <a href="#login" class="btn btn-primary btn-lg">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Shop Button with Carousel Section -->
+  <section class="carousel-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Shop Our Gaming Merchandise</h2>
+      <div class="text-center mb-3">
+        <a href="shop.html" class="btn btn-success btn-lg">Shop Now</a>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2418000373/display_1500/stock-photo-the-fan-cooler-phone-accessory-is-a-portable-accessory-for-gaming-or-running-heavy-applications-to-2418000373.jpg" class="d-block w-100" alt="Gaming Gear 1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/99/92/36/1000_F_399923632_QqtBp6xQQTPN0V91o8GTAEkC1etNA0dR.jpg" class="d-block w-100" alt="Gaming Gear 2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.shutterstock.com/shutterstock/photos/1861139224/display_1500/stock-photo-black-wireless-bluetooth-headphones-on-neon-light-background-music-concept-1861139224.jpg" class="d-block w-100" alt="Gaming Gear 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Matches Section -->
+  <section id="recent-matches" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Recent Matches</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card match-card">
+            <img src="https://images.squarespace-cdn.com/content/v1/611d60fe1bdfad3944022ea3/1676998176726-3H7Z60G98QEI4O8GAML6/image3.jpg/300x200" class="card-img-top" alt="Match 1" />
+            <div class="card-body">
+              <h5 class="card-title">Match 1</h5>
+              <p class="card-text">Team A vs Team B - Winner: Team A</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card match-card">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/66ac8d978004eb7b9e302dbb/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds/300x200" class="card-img-top" alt="Match 2" />
+            <div class="card-body">
+              <h5 class="card-title">Match 2</h5>
+              <p class="card-text">Team C vs Team D - Winner: Team D</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card match-card">
+            <img src="https://unity.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffuvbjjlp%2Fproduction%2Fa87bc820dd69d0d63bacc0418d3d821a1f457354-1920x1080.jpg&w=3840&q=75&dpl=dpl_AchCFkmNCbxt23o6RqvnJyXmcPWr/300x200" class="card-img-top" alt="Match 3" />
+            <div class="card-body">
+              <h5 class="card-title">Match 3</h5>
+              <p class="card-text">Team E vs Team F - Winner: Team E</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Tournaments Section -->
+  <section id="upcoming-tournaments" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Upcoming Tournaments</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card tournament-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvGpYulG4837vSgagZNjDQDUA0n3ZG6mjhiA&s/300x200" class="card-img-top" alt="Tournament 1" />
+            <div class="card-body">
+              <h5 class="card-title">Tournament 1</h5>
+              <p class="card-text">Date: 10th November 2023</p>
+              <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card tournament-card">
+            <img src="https://imageio.forbes.com/specials-images/imageserve/5eafec6ded706b0007e654a4/The-TI-Invitational-Key-Art/960x0.jpg?format=jpg&width=960/300x200" class="card-img-top" alt="Tournament 2" />
+            <div class="card-body">
+              <h5 class="card-title">Tournament 2</h5>
+              <p class="card-text">Date: 15th November 2023</p>
+              <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card tournament-card">
+            <img src="https://cdn-wp.thesportsrush.com/2020/11/9eb4129b-among-us-tournament-1.jpg?format=auto&w=640&q=75/300x200" class="card-img-top" alt="Tournament 3" />
+            <div class="card-body">
+              <h5 class="card-title">Tournament 3</h5>
+              <p class="card-text">Date: 20th November 2023</p>
+              <a href="#" class="btn btn-primary">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section id="collaboration" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Collaboration</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="feature-icon">🤝</div>
+          <h4>Team Up</h4>
+          <p>Find teammates and form squads for upcoming tournaments.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">🎮</div>
+          <h4>Practice Together</h4>
+          <p>Join practice sessions and improve your skills.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-icon">🏆</div>
+          <h4>Compete</h4>
+          <p>Participate in tournaments and win exciting prizes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p>&copy; 2023 Esports Gaming Community. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

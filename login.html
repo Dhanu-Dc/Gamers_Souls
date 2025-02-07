@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background: linear-gradient(135deg, #1a1a1a, #333333);
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container-form {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #ff6f61;
+    }
+    .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+    .form-control:focus {
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      box-shadow: none;
+    }
+    .form-label {
+      color: #ffffff;
+    }
+    .btn-submit {
+      background: #ff6f61;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .btn-submit:hover {
+      background: #ff4a3d;
+    }
+    .toggle-link {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+    .toggle-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-form">
+    <!-- Login Form -->
+    <div id="loginContainer">
+      <h2 class="text-center">Esports Login</h2>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-submit">Login</button>
+        <p class="text-center mt-3">
+          Don't have an account? <a href="#" class="toggle-link" id="showRegister">Register here</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerContainer" style="display: none;">
+      <h2 class="text-center">Esports Registration</h2>
+      <form id="registerForm">
+        <div class="mb-3">
+          <label for="registerEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="registerPassword" class="form-label">Create Password</label>
+          <input type="password" class="form-control" id="registerPassword" placeholder="Create your password" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+        <div class="mb-3">
+          <label for="inGameName" class="form-label">In-Game Name</label>
+          <input type="text" class="form-control" id="inGameName" placeholder="Enter your in-game name" required>
+        </div>
+        <div class="mb-3">
+          <label for="achievementScreenshot" class="form-label">Achievement Screenshot</label>
+          <input type="file" class="form-control" id="achievementScreenshot" accept="image/*">
+        </div>
+        <button type="submit" class="btn btn-submit">Register</button>
+        <p class="text-center mt-3">
+          Already have an account? <a href="#" class="toggle-link" id="showLogin">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Toggle between login and register forms
+    document.getElementById("showRegister").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("loginContainer").style.display = "none";
+      document.getElementById("registerContainer").style.display = "block";
+    });
+
+    document.getElementById("showLogin").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("registerContainer").style.display = "none";
+      document.getElementById("loginContainer").style.display = "block";
+    });
+
+    // Registration form submission handling (example validation)
+    document.getElementById("registerForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const email = document.getElementById("registerEmail").value;
+      const password = document.getElementById("registerPassword").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const inGameName = document.getElementById("inGameName").value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+      alert(`Registration successful for ${inGameName}!`);
+      // Add Firebase or backend logic here
+    });
+  </script>
+</body>
+</html>
